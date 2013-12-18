@@ -1,3 +1,9 @@
+facter (1.7.1-1puppetlabs1pexip2) precise; urgency=low
+
+  * Abuse postinst to clean up puppet mess (in ..pexip2)
+
+ -- John-Mark Bell <jmb@pexip.com>  Tue, 17 Dec 2013 16:22:35 +0000
+
 facter (1.7.1-1puppetlabs1pexip1) precise; urgency=low
 
   * Repackage for Pexip

@@ -1,0 +1,22 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "configure" ]; then
+
+    # This is unpleasant: the pexip2 incarnation of puppet contained a broken 
+    # init script, which causes the package prerm script to hang indefinitely.
+    # The only way out of the hole we dug ourselves is to prevent puppet from
+    # being upgraded by "apt-get upgrade". This is achieved in pexip4 by
+    # introducing a dummy package which puppet depends on -- we'll remove
+    # this dummy package in a later release, as it will have served its
+    # purpose by that point. We also needed to pick a related package which
+    # would be upgraded by "apt-get upgrade" so that we could use its
+    # installation to make the pexip2 puppet package upgradeable.
+    # This is the chosen package.
+    if [ -x "/etc/init.d/puppet" ]; then
+        chmod a-x "/etc/init.d/puppet"
+    fi
+fi
+
+#DEBHELPER#
