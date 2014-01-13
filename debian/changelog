@@ -1,3 +1,9 @@
+facter (1.7.1-1puppetlabs1pexip3) pexip; urgency=low
+
+  * Add patch which detects PexOS facts
+
+ -- John-Mark Bell <jmb@pexip.com>  Mon, 13 Jan 2014 13:35:23 +0000
+
 facter (1.7.1-1puppetlabs1pexip2) precise; urgency=low
 
   * Abuse postinst to clean up puppet mess (in ..pexip2)
