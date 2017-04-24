@@ -1,3 +1,9 @@
+facter (1.7.1-1puppetlabs1pexip4) pexip; urgency=low
+
+  * debian/control: fix up for ruby2.1
+
+ -- John-Mark Bell <jmb@pexip.com>  Mon, 24 Apr 2017 17:18:03 +0100
+
 facter (1.7.1-1puppetlabs1pexip3) pexip; urgency=low
 
   * Add patch which detects PexOS facts
