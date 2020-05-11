@@ -1,3 +1,9 @@
+facter (1.7.1-1puppetlabs1pexip6) pexip; urgency=low
+
+  * Update 01-detect-pexos.patch for buster lsb id case change
+
+ -- Vincent Sanders <vince@pexip.com>  Mon, 11 May 2020 10:58:31 +0100
+
 facter (1.7.1-1puppetlabs1pexip5) pexip; urgency=low
 
   * Backport fix for IP address detection

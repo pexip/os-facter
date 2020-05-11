@@ -19,7 +19,7 @@ index f8e666e..19f6bd8 100644
    setcode do
      if Facter.value(:lsbdistid) == "Ubuntu"
         "Ubuntu"
-+    elsif Facter.value(:lsbdistid) == "PexOS"
++    elsif Facter.value(:lsbdistid) == "Pexos"
 +       "PexOS"
      elsif FileTest.exists?("/etc/debian_version")
        "Debian"
@@ -84,7 +84,7 @@ index 794b9ca..5b838b4 100755
 +      it "on PexOS should use the lsbdistid fact" do
 +        FileUtils.stubs(:exists?).with("/etc/debian_version").returns true
 +
-+        Facter.stubs(:value).with(:lsbdistid).returns("PexOS")
++        Facter.stubs(:value).with(:lsbdistid).returns("Pexos")
 +        Facter.fact(:operatingsystem).value.should == "PexOS"
 +      end
 +
