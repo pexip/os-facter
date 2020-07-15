@@ -1,3 +1,9 @@
+facter (1.7.1-1puppetlabs1pexip6) pexip; urgency=medium
+
+  * Rebuild in buster environment
+
+ -- Steve McIntyre <steve.mcintyre@pexip.com>  Wed, 15 Jul 2020 18:20:44 +0000
+
 facter (1.7.1-1puppetlabs1pexip5) pexip; urgency=low
 
   * Backport fix for IP address detection
